@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4682b4;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button-container {
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .social-links img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My First Webpage</h1>
+    <p>Learning HTML, CSS, and JavaScript</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm learning how to build websites. This is my first step into the world of web development.</p>
+    <p>I love nature and enjoy exploring new things!</p>
+  </section>
+
+  <section>
+    <h2>My Favorite Image</h2>
+    <img src="nature.png" alt="Nature Image" />
+  </section>
+
+  <section>
+    <h2>My Social Media</h2>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.linkedin.com/in/sunitha-bayya-a15396338" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" />
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/SunithaBayya" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Icon" />
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="button-container">
+    <button onclick="showMessage()">Click Me!</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Hello! You just clicked the button 🚀");
+    }
+  </script>
+
+</body>
+</html>
